@@ -1,0 +1,19 @@
+programa {
+  funcao inicio() 
+{
+inteiro nota
+escreva("De uma nota entre 0 e 10 :")
+leia(nota)
+escreva("Exelente!")
+ 
+enquanto(nota<0 ou nota>10)
+ se(nota<0 ou nota>10){
+  escreva("Invalido! tente novamente. \n")
+  escreva("De uma nota entre 0 e 10 :")
+  leia(nota) 
+ }
+ senao{
+
+  }
+}
+}
