@@ -1,0 +1,19 @@
+programa {
+  funcao inicio() 
+{
+cadeia nome,senha
+escreva("Escreva o nome de usuario : ")
+leia(nome)
+escreva("Digite sua senha : ")
+leia (senha)
+escreva("Validando...Exelente!")
+
+enquanto(nome == senha) {
+  escreva("ERRO!Tente novamente.\n")
+  escreva("Escreva o nome de usuario : ")
+  leia(nome)
+  escreva("Digite sua senha : ")
+  leia (senha)
+}
+  }
+}
