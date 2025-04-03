@@ -1,0 +1,44 @@
+programa {
+  funcao inicio() 
+{
+cadeia nome,sexo,estadoCivil
+inteiro idade
+real salario
+escreva("escreva seu nome : ")
+leia(nome) 
+enquanto(nome<3){
+  escreva("escreva seu nome : ")
+  leia(nome) 
+}
+
+escreva("escreva sua idade: ")
+leia(idade)
+enquanto(idade<0 ou idade>150){
+  escreva("escreva sua idade : ")
+  leia(idade) 
+}
+
+escreva("informe seu salario   : ")
+leia(salario)
+enquanto(salario<0){
+  escreva("Informe seu salario   : ")
+  leia(salario) 
+}
+
+
+escreva("Estado civil:")
+leia(estadoCivil)
+escreva(estadoCivil)
+enquanto(estadoCivil != 's' e estadoCivil != 'c' e estadoCivil != 'v' e estadoCivil != 'd'){
+  escreva("Invalido! Estado civil : ")
+}
+
+escreva(" qual seu sexo   : ")
+leia(sexo)
+escreva(sexo)
+enquanto(sexo != 'f' e sexo != 'm'){
+  escreva("Invalido! qual seu sexo : ")
+   
+}
+  }
+}
