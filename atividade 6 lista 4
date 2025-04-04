@@ -1,14 +1,22 @@
-programa {
-  funcao inicio() 
-{
- inteiro numero
- escreva("Os numeros são: ")
-  para(inteiro i = 0; i<=20; i++){
-    escreva(i,"\n")
-  }
- para(inteiro i = 0; i<=20; i++){
-  escreva (i)
- }
- 
-  }
+public class Exercicio_6 {
+
+	public static void main(String[] args) {
+		
+		int x;
+		
+		for (x = 1; x <= 20; x++) {
+			
+			System.out.println(x);
+		}
+		
+		int y = 1;
+		
+		while (y <= 20) {
+			
+			System.out.print(y + " ");
+			y++;
+		}
+		
+	}
+
 }
