@@ -20,7 +20,7 @@ public class Exercicio_10 {
 			x = n1 - 2;
 			
 			while (n2 <= x) {
-			
+			 
 			n2++;	
 			System.out.println(n2);
 		}	
