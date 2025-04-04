@@ -1,33 +1,31 @@
-programa {
-  funcao inicio() 
-{
-    inteiro numero1,numero2,numero3,numero4,numero5,maior=0
-    inteiro numeros[5]
-    escreva("Escreva o primeiro numero : \n")
-    leia(numero1)
-    numeros[0]=numero1
-    escreva("Escreva o segundo numero : \n")
-    leia(numero2)
-    numeros[1]=numero2
-    escreva("Escreva o terceiro numero : \n")
-    leia(numero3)
-    numeros[2]=numero3
-    escreva("Escreva o quarto numero :\n ")
-    leia(numero4)
-    numeros[3]=numero4
-    escreva("Escreva o quinto numero :\n ")
-    leia(numero5)
-    numeros[4]=numero5
+import java.util.Scanner;
+public class Exercicio_7 {
 
-      para (inteiro i = 0; i<5; i++){
-        se(numeros[i]> maior){
-          maior = numeros[i]
-        }senao{
-          maior = maior
-        }
-      }
-       escreva("O numero maior é : ", maior)
+	public static void main(String[] args) {
+	
+		Scanner sc = new Scanner(System.in);
+		
+		double n;
+		double maior = Double.NEGATIVE_INFINITY;
+		int c;
+		
+		
+		for (c = 0 ; c < 5; c++) {
+				
+			System.out.println("Digite os numeros: ");
+			n = sc.nextDouble();
+			
+			if (n > maior) {
+			
+				maior = n;
+			}
+			sc.close();
+		}
+		
+		
+		System.out.println("O maior numero é : " + maior);
+		
+		
+	}
 
-       
-    }
-  }
+}
