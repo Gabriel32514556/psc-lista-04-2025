@@ -1,19 +1,23 @@
-programa {
-  funcao inicio() 
-{
-inteiro nota
-escreva("De uma nota entre 0 e 10 :")
-leia(nota)
-escreva("Exelente!")
- 
-enquanto(nota<0 ou nota>10)
- se(nota<0 ou nota>10){
-  escreva("Invalido! tente novamente. \n")
-  escreva("De uma nota entre 0 e 10 :")
-  leia(nota) 
- }
- senao{
 
-  }
-}
+import java.util.Locale;
+import java.util.Scanner;
+public class Exercicio_1 {
+
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		double n1 = 0;
+		
+		System.out.print("Digite um numero: ");
+		n1 = sc.nextDouble();
+		
+		while (n1 <= 0 || n1 >= 10) {
+			System.out.println("Informe um valor valido!");
+			n1 = sc.nextDouble();		
+		}
+		
+		sc.close();
+	}
+
 }
