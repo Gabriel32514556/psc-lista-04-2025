@@ -1,0 +1,14 @@
+programa {
+  funcao inicio() 
+{
+ inteiro numero
+ escreva("Os numeros são: ")
+  para(inteiro i = 0; i<=20; i++){
+    escreva(i,"\n")
+  }
+ para(inteiro i = 0; i<=20; i++){
+  escreva (i)
+ }
+ 
+  }
+}
